@@ -1,9 +1,10 @@
-<body class = "container">
-   
+<body >
+   <div class = "container">
     <div class="example-container" [class.example-is-mobile]="mobileQuery.matches" >
-        <mat-toolbar style="background-color: none;" >
+        <mat-toolbar style="background-color:rgb(240,240,240) ;" >
          
-          <span>Dashboard</span>
+          <span><div style="font-size:28px;padding-left: 10px;">Dashboard</div>
+            <caption style="text-align:left;color:rgb(136, 123, 123);padding-left: 10px; font-size:17px;">Sales overview & summary</caption></span>
           <span class="example-spacer"></span>
       
       
@@ -17,63 +18,97 @@
         </mat-toolbar>
       </div>
 
-      <div class="col-md-12">
-        <div class="row">
-                   <div class="col-sm-6">
-                     <div class="card" style="border-radius: 13px;">
-                       <div class="card-body">
-                         <h5 class="card-title mb-4">Sales</h5>
-                         <h1 class="display-5 mt-1 mb-3">2.382</h1>
-                         <div class="mb-1">
-                           <span class="text-danger"> <i class="mdi mdi-arrow-bottom-right"></i> -3.65% </span>
-                           <span class="text-muted">Since last week</span>
-                         </div>
-                       </div>
-                     </div>
-                     
-                   </div>
-                   <div class="col-sm-6" >
-                     <div class="card" style="border-radius: 13px;">
-                       <div class="card-body">
-                         <h5 class="card-title mb-4">Sales</h5>
-                         <h1 class="display-5 mt-1 mb-3">2.382</h1>
-                         <div class="mb-1">
-                           <span class="text-danger"> <i class="mdi mdi-arrow-bottom-right"></i> -3.65% </span>
-                           <span class="text-muted">Since last week</span>
-                         </div>
-                       </div>
-                     </div>
-                     
-                   </div>
-                   <div class="col-sm-6" >
-                     <div class="card" style="border-radius: 13px;">
-                       <div class="card-body">
-                         <h5 class="card-title mb-4">Sales</h5>
-                         <h1 class="display-5 mt-1 mb-3">2.382</h1>
-                         <div class="mb-1">
-                           <span class="text-danger"> <i class="mdi mdi-arrow-bottom-right"></i> -3.65% </span>
-                           <span class="text-muted">Since last week</span>
-                         </div>
-                       </div>
-                     </div>
-                     
-                   </div>
-                   <div class="col-sm-6">
-                     <div class="card" style="border-radius: 13px;">
-                       <div class="card-body">
-                         <h5 class="card-title mb-4">Earnings</h5>
-                         <h1 class="display-5 mt-1 mb-3">$21.300</h1>
-                         <div class="mb-1">
-                           <span class="text-success"> <i class="mdi mdi-arrow-bottom-right"></i> 6.65% </span>
-                           <span class="text-muted">Since last week</span>
-                         </div>
-                       </div>
-                     </div>
-                     
-                   </div>
-                   
-                   
-                 </div>
-     </div>
+  <div style="padding-top: 15px;"> 
+      <div class="row11">
+        <div class="column11" >
+          <div class="card11" style="background-color: rgb(57, 57, 245);">
+           <p style = "float:left ;"class="title is-1">Title 1</p>
+      <p class="subtitle is-3">Subtitle 3</p>
+      <p>Some text</p>
+      <span>Some text</span>
+          </div>
+        </div>
+      
+        <div class="column11">
+          <div class="card11"  style="background-color: rgb(214, 214, 9);">
+            <h3>Card 2</h3>
+            <p>Some text</p>
+            <p>Some text</p>
+          </div>
+        </div>
+        
+        
+       
+      </div>
+      
+      
+      
+      <div class="row11">
+        <div class="column11">
+          <div class="card11" style="background-color: rgb(108, 28, 184);">
+            <h3>Card 1</h3>
+            <p>Some text</p>
+            <p>Some text</p>
+          </div>
+        </div>
+      
+        <div class="column11">
+          <div class="card11" style="background-color: rgb(9, 143, 148);">
+            <h3>Card 2</h3>
+            <p>Some text</p>
+            <p>Some text</p>
+          </div>
+        </div>
+        
+        
+       
+      </div>
+    </div>
+
+
+
+
+    <div class="row11">
+      <div class="column11" >
+        <div class="card12" >
+         <p style = "float:left ;"class="title is-1">Title 1</p>
+    <p class="subtitle is-3">Subtitle 3</p>
+    <p>Some text</p>
+    <span>Some text</span>
+        </div>
+      </div>
+    
+      <div class="column11">
+        <div class="card12"  >
+          <h3>Card 2</h3>
+          <p>Some text</p>
+          <p>Some text</p>
+        </div>
+      </div>
+      
+      
+     
+    </div>
+
+
+    <ngx-charts-bar-vertical-2d
+  [view]="view"
+  [scheme]="colorScheme"
+  [results]="multi"
+  [gradient]="gradient"
+  [xAxis]="showXAxis"
+  [yAxis]="showYAxis"
+  [legend]="showLegend"
+  [showXAxisLabel]="showXAxisLabel"
+  [showYAxisLabel]="showYAxisLabel"
+  [xAxisLabel]="xAxisLabel"
+  [yAxisLabel]="yAxisLabel"
+  [legendTitle]="legendTitle"
+  (select)="onSelect($event)"
+  (activate)="onActivate($event)"
+  (deactivate)="onDeactivate($event)">
+</ngx-charts-bar-vertical-2d>
+    
+  </div>   
      
 </body>
