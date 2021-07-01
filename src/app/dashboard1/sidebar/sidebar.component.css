@@ -67,3 +67,18 @@ h1.example-app-name {
   flex: 1 0 auto;
 }
 
+.account{
+  display:none;
+}
+
+.rnav{
+  display: block;
+}
+@media only screen and (max-width:992px){
+  .account{
+    display:block;
+  }
+  .rnav{
+    display: none;
+  }
+}

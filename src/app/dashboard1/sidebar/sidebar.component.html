@@ -3,17 +3,86 @@
     <button mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
     <span>My App</span>
     <span class="example-spacer"></span>
-    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-      <mat-icon>favorite</mat-icon>
+
+
+    <button mat-icon-button [matMenuTriggerFor]="menu" style="padding-left:30px ; padding-right: 50px;" aria-label="Example icon-button with a menu" class="rnav">
+      <mat-icon>mail</mat-icon>
     </button>
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-      <mat-icon>share</mat-icon>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        <mat-icon>dialpad</mat-icon>
+        <span>Redial</span>
+      </button>
+      <button mat-menu-item disabled>
+        <mat-icon>voicemail</mat-icon>
+        <span>Check voice mail</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>notifications_off</mat-icon>
+        <span>Disable alerts</span>
+      </button>
+    </mat-menu>
+
+
+    <button mat-icon-button [matMenuTriggerFor]="menu" style="padding-left:30px ; padding-right: 50px;" aria-label="Example icon-button with a menu" class="rnav">
+      <mat-icon>notifications</mat-icon>
     </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        <mat-icon>dialpad</mat-icon>
+        <span>Redial</span>
+      </button>
+      <button mat-menu-item disabled>
+        <mat-icon>voicemail</mat-icon>
+        <span>Check voice mail</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>notifications_off</mat-icon>
+        <span>Disable alerts</span>
+      </button>
+    </mat-menu>
+
+    <button mat-icon-button [matMenuTriggerFor]="menu" style="padding-left:30px ; padding-right: 50px;" aria-label="Example icon-button with a menu">
+      <mat-icon>account_circle</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        <mat-icon>dialpad</mat-icon>
+        <span>Profile</span>
+      </button>
+      <button mat-menu-item disabled>
+        <mat-icon>settings</mat-icon>
+        <span>settings</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>notifications_off</mat-icon>
+        <span>help</span>
+      </button>
+      <hr>
+      <button mat-menu-item>
+        <mat-icon>notifications_off</mat-icon>
+        <span>logout</span>
+      </button>
+    </mat-menu>
+    
+   
   </mat-toolbar>
 
   <mat-sidenav-container class="example-sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
     <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'" [fixedInViewport]="mobileQuery.matches">
       <mat-nav-list>
+
+        <div class="account">
+        <div style="padding-top: 30px; padding-bottom:  30px ; padding-left: 20px; font-size:20px">Account</div> 
+        <div style="padding-top: 30px; padding-bottom:  30px ; padding-left: 20px; font-size:20px">Account</div> 
+
+        <a mat-list-item style="padding-left:28px ;">  <mat-icon>notifications</mat-icon>  Notifications</a>
+      <a mat-list-item style="padding-left:28px ;">  <mat-icon>mail</mat-icon> Messages</a>
+      <div style="padding-top: 20px; padding-bottom: 20px;">
+        <hr>
+      </div>
+    </div>
+
        <div style="padding-top: 30px; padding-bottom:  30px ; padding-left: 20px; font-size:20px">Interface</div> 
       <a mat-list-item style="padding-left:28px ;">  <mat-icon>language</mat-icon>  Overview</a>
         <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false"  style=" -moz-box-shadow:    inset 0 0 10px white;
