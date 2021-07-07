@@ -8,32 +8,28 @@
           <span class="example-spacer"></span>
       
       
-          <button style="padding-left:30px ; padding-right: 50px;" aria-label="Example icon-button with a menu" class="rnav">
-            <mat-icon>mail</mat-icon>
-          </button>
+         
           
-          <button style="padding-left:30px ; padding-right: 50px;" aria-label="Example icon-button with a menu" class="rnav">
-            <mat-icon>mail</mat-icon>
-          </button>
         </mat-toolbar>
       </div>
 
   <div style="padding-top: 15px;"> 
       <div class="row11">
         <div class="column11" >
-          <div class="card11" style="background-color: rgb(57, 57, 245);">
-           <p style = "float:left ;"class="title is-1">Title 1</p>
-      <p class="subtitle is-3">Subtitle 3</p>
-      <p>Some text</p>
-      <span>Some text</span>
+          <div class="card11" style="background-color: rgba(12, 12, 194, 0.815);">
+          <div style="font-size:20px;padding-left: 10px;text-align:left;">101.1 K</div>
+            <caption style="text-align:left;color:rgb(221, 205, 205);padding-left: 10px; font-size:15px;">Downloads</caption>
+      <p style="text-align:left;color:rgb(221, 205, 205);padding-left: 10px; font-size:13px;"> <mat-icon >arrow_upward</mat-icon>3% from last month</p>
+  
           </div>
         </div>
       
         <div class="column11">
-          <div class="card11"  style="background-color: rgb(214, 214, 9);">
-            <h3>Card 2</h3>
-            <p>Some text</p>
-            <p>Some text</p>
+          <div class="card11"  style="background-color: rgb(240, 160, 12);">
+            <div style="font-size:20px;padding-left: 10px;text-align:left;">101.1 K</div>
+            <caption style="text-align:left;color:rgb(221, 205, 205);padding-left: 10px; font-size:15px;">Downloads</caption>
+      <p style="text-align:left;color:rgb(221, 205, 205);padding-left: 10px; font-size:13px;"> <mat-icon >arrow_upward</mat-icon>3% from last month</p>
+  
           </div>
         </div>
         
@@ -45,18 +41,20 @@
       
       <div class="row11">
         <div class="column11">
-          <div class="card11" style="background-color: rgb(108, 28, 184);">
-            <h3>Card 1</h3>
-            <p>Some text</p>
-            <p>Some text</p>
+          <div class="card11" style="background-color: rgba(128, 0, 128, 0.842)">
+            <div style="font-size:20px;padding-left: 10px;text-align:left;">101.1 K</div>
+            <caption style="text-align:left;color:rgb(221, 205, 205);padding-left: 10px; font-size:15px;">Downloads</caption>
+      <p style="text-align:left;color:rgb(221, 205, 205);padding-left: 10px; font-size:13px;"> <mat-icon >arrow_upward</mat-icon>3% from last month</p>
+  
           </div>
         </div>
       
         <div class="column11">
           <div class="card11" style="background-color: rgb(9, 143, 148);">
-            <h3>Card 2</h3>
-            <p>Some text</p>
-            <p>Some text</p>
+            <div style="font-size:20px;padding-left: 10px;text-align:left;">101.1 K</div>
+            <caption style="text-align:left;color:rgb(221, 205, 205);padding-left: 10px; font-size:15x;">Downloads</caption>
+      <p style="text-align:left;color:rgb(221, 205, 205);padding-left: 10px; font-size:13px;"> <mat-icon >arrow_upward</mat-icon>3% from last month</p>
+  
           </div>
         </div>
         
@@ -66,49 +64,223 @@
     </div>
 
 
-
-
     <div class="row11">
-      <div class="column11" >
-        <div class="card12" >
-         <p style = "float:left ;"class="title is-1">Title 1</p>
-    <p class="subtitle is-3">Subtitle 3</p>
-    <p>Some text</p>
-    <span>Some text</span>
+      <div class="column13" >
+        <div style="background:rgba(12, 12, 194, 0.815) ;height: 35px; color: white; padding-top:20px;padding-bottom: 20px;
+         border-top-left-radius: 7px;
+   border-top-right-radius: 7px;">
+          <div style="font-size:20px;padding-left: 20px;text-align:left;">Revenue Breakdow </div>
+          <caption style="text-align:left;color:rgb(201, 186, 186);padding-left: 20px; font-size:15px;">Compared&nbsp;to&nbsp;previous&nbsp;year</caption> </div>
+        <div class="card13" >
+          <div class="row">
+            <div class="column23" >
+              <caption style="text-align:left;color:rgb(201, 186, 186);padding-left: 20px; font-size:15px;">Actual&nbsp;Revenue</caption>
+              <div style="font-size:20px;padding-left: 20px;text-align:left;"> $59,482</div>
+          
+              </div>
+              <div class="column23" >
+                <caption style="text-align:left;color:rgb(201, 186, 186);padding-left: 20px; font-size:15px;">ARevenue&nbsp;Target
+                 
+                  </caption>
+                <div style="font-size:20px;padding-left: 20px;text-align:left;"> $50,000</div>
+            
+                </div>
+                <div class="column23" >
+                  <caption style="text-align:left;color:rgb(201, 186, 186);padding-left: 20px; font-size:15px;">Goal</caption>
+                  <div style="font-size:20px;padding-left: 20px;text-align:left;color: green;">119%</div>
+              
+                  </div>
+              </div>
+          <div style="padding:10px 10px 10px 10px;">
+          <div class="graph" >
+            <ngx-charts-bar-vertical-2d 
+            [barPadding]="2"
+             [scheme]="colorScheme"
+          [results]="multi"
+          [view] = [a,b]
+          [gradient]="gradient"
+          [xAxis]="showXAxis"
+          [yAxis]="showYAxis"
+          (select)="onSelect($event)"
+          (activate)="onActivate($event)"
+          (deactivate)="onDeactivate($event)">
+        </ngx-charts-bar-vertical-2d>
+      </div>
+      
+          </div>   
+          
         </div>
+        
       </div>
     
-      <div class="column11">
-        <div class="card12"  >
-          <h3>Card 2</h3>
-          <p>Some text</p>
-          <p>Some text</p>
-        </div>
+      <div class="column12">
+        <div style="background:rgba(12, 12, 194, 0.815) ;height: 35px; color: white; padding-top:20px;padding-bottom: 20px;
+        border-top-left-radius: 7px;
+   border-top-right-radius: 7px;">
+          <div style="font-size:20px;padding-left: 20px;text-align:left;">Segments </div>
+          <caption style="text-align:left;color:rgb(201, 186, 186);padding-left: 20px; font-size:15px;">Revenue&nbsp;sources</caption> </div>
+        <div class="card13"  >
+          <div style=" width: 350px;
+          height: 350px;">
+          <div style="padding-bottom: 18px; padding-top: 15px; float:centre;">
+          <div style="padding-bottom: 6px;"> <span style="background-color: #5AA454; border-radius: 10px;">&nbsp;&nbsp;</span> 
+            <span class="legend-label-text"> Germany</span> &nbsp;
+            <span style="background-color: #A10A28;border-radius: 10px;">&nbsp;&nbsp;</span> 
+            <span class="legend-label-text"> USA</span>&nbsp;</div>
+            <div style="padding-bottom: 6px;"> <span style="background-color: #C7B42C; border-radius: 10px;">&nbsp;&nbsp;</span> 
+              <span class="legend-label-text"> UK</span> &nbsp;
+              <span style="background-color: #AAAAAA;border-radius: 10px;">&nbsp;&nbsp;</span> 
+              <span class="legend-label-text"> India</span>&nbsp;</div>
+              <div style="padding-bottom: 6px;"> <span style="background-color: #9932CC; border-radius: 10px;">&nbsp;&nbsp;</span> 
+                <span class="legend-label-text"> France</span> &nbsp;
+                </div>
+              </div>
+            
+                   
+                 
+         <ngx-charts-pie-chart
+        
+         [view] = [c,d]
+       
+         [scheme]="colorSchemee"
+         [results]="single"
+        
+         [gradient]="gradient"
+         (select)="onnSelect($event)">
+       </ngx-charts-pie-chart>
+
+     
+</div >
+
+</div>
+        
       </div>
       
       
      
     </div>
 
-
-    <ngx-charts-bar-vertical-2d
-  [view]="view"
-  [scheme]="colorScheme"
-  [results]="multi"
-  [gradient]="gradient"
-  [xAxis]="showXAxis"
-  [yAxis]="showYAxis"
-  [legend]="showLegend"
-  [showXAxisLabel]="showXAxisLabel"
-  [showYAxisLabel]="showYAxisLabel"
-  [xAxisLabel]="xAxisLabel"
-  [yAxisLabel]="yAxisLabel"
-  [legendTitle]="legendTitle"
-  (select)="onSelect($event)"
-  (activate)="onActivate($event)"
-  (deactivate)="onDeactivate($event)">
-</ngx-charts-bar-vertical-2d>
+    <div class="row11">
+      <div class="column11" >
+        <div class="card12" >
+          <div class="store">
+          <div class="row">
+            <div class="column33" >
+              <div style="font-size:20px;padding-left: 20px;text-align:left;padding-top: 20px;"> Privacy Suggestions</div>
+              <caption style="text-align:left;color:rgb(201, 186, 186);padding-left: 20px; font-size:15px;">Take&nbsp;our&nbsp;privacy&nbsp;checkup </caption>
+              
+              </div>
+              <div class="column33" >
+                <img style = "float: right; height: 120px;"src="assets/privacy.png">
+            
+                </div>
+               
+                </div>
+             </div>
+        <div>
+          <hr>
+          <div style="padding:10px; text-decoration:none;text-align:left"><a href="/">Review Suggestions</a></div>
+        </div>
+      </div>
+    </div>
     
-  </div>   
+      <div class="column11">
+        <div class="card12" >
+          <div class="storage">
+          <div class="row">
+            <div class="column33" >
+              <div style="font-size:20px;padding-left: 20px;text-align:left;padding-top: 20px;"> Account Storage</div>
+              <caption style="text-align:left;color:rgb(201, 186, 186);padding-left: 20px; font-size:15px; padding-bottom: 15px;">Your&nbsp;account&nbsp;storage</caption>
+              <progress  value="30" max="100"></progress>
+              <caption style="text-align:left;color:rgb(201, 186, 186);padding-left: 20px; font-size:15px; padding-bottom: 15px;">10&nbsp;GB&nbsp;of&nbsp;30&nbsp;GB&nbsp;used</caption>
+              </div>
+              <div class="column33" >
+                <img style = "float: right; height: 120px; width: 150px;"src="assets/storage.png">
+            
+                </div>
+              </div>
+            </div>
+        <div>
+          
+          <hr>
+          <div style="padding:10px; text-decoration:none;text-align:left"><a href="/">Review Suggestions</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class = "level">
+  <div style="background:rgba(12, 12, 194, 0.815) ;height: 35px; color: white; padding-top:20px;padding-bottom: 20px;
+  border-top-left-radius: 7px;
+border-top-right-radius: 7px;"
+><div style="font-size:20px;padding-left: 20px;text-align:left;">Orders</div>
+<caption style="text-align:left;color:rgb(201, 186, 186);padding-left: 20px; font-size:15px;">Details&nbsp;and&nbsp;history</caption> </div>
+<div class="card14" >
+  <div style="overflow-x:auto; padding-top: 30px;padding-right: 10px; padding-left:10px ;">
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Ext</th>
+        <th>city</th>
+        <th>start date</th>
+        <th>completion</th>
+        
+      </tr>
+      <tr>
+        <td>Hermione Dickson</td>
+        <td>2785</td>
+        <td>Woodstock</td>
+        <td>2001/22/03/td>
+        <td>53%</td>
+        
+      </tr>
+      <tr>
+        <td>Hermione Dickson</td>
+        <td>2785</td>
+        <td>Woodstock</td>
+        <td>2001/22/03/td>
+        <td>53%</td>
+       
+       
+      </tr>
+      <tr>
+        <td>Hermione Dickson</td>
+        <td>2785</td>
+        <td>Woodstock</td>
+        <td>2001/22/03/td>
+        <td>53%</td>
+        
+        
+      </tr>
+      <tr>
+        <td>Hermione Dickson</td>
+        <td>2785</td>
+        <td>Woodstock</td>
+        <td>2001/22/03/td>
+        <td>53%</td>
+        
+        
+      </tr>
+      <tr>
+        <td>Hermione Dickson</td>
+        <td>2785</td>
+        <td>Woodstock</td>
+        <td>2001/22/03/td>
+        <td>53%</td>
+        
+        
+      </tr>
+      <tr>
+        <td>Hermione Dickson</td>
+        <td>2785</td>
+        <td>Woodstock</td>
+        <td>2001/22/03/td>
+        <td>53%</td>
+         </tr>
+    </table>
+    </div>
+</div>
+
+</div>
+</div>
      
 </body>

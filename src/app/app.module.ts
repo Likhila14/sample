@@ -44,8 +44,10 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 import {ScrollingModule} from '@angular/cdk/scrolling';
+
 
 import 'hammerjs';
 import { AppComponent } from './app.component';
@@ -68,6 +70,7 @@ import 'hammerjs';
   ],
   imports: [
     BrowserModule,
+  
     ScrollingModule,
     ReactiveFormsModule,
     FormsModule,
@@ -117,7 +120,7 @@ import 'hammerjs';
     MatTooltipModule,
     MatTreeModule,
     PortalModule,
-  
+    NgxChartsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

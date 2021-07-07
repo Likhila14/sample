@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ChangeDetectorRef,  OnDestroy } from '@angular/core';
 import { MediaMatcher } from '@angular/cdk/layout';
 import { multi } from './data';
-
+import {single, multii} from './single';
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
@@ -11,7 +11,12 @@ import { multi } from './data';
 export class DashboardComponent implements OnInit {
   multi: any[];
   view: any[] = [700, 400];
-
+  single: any[];
+  multii: any[];
+a = 530;
+b = 350;
+c= 300;
+d = 250;
   // options
   showXAxis: boolean = true;
   showYAxis: boolean = true;
@@ -23,6 +28,7 @@ export class DashboardComponent implements OnInit {
   yAxisLabel: string = 'Population';
   legendTitle: string = 'Years';
 
+  below: string = "below";
 
   ngOnInit(): void {
   }
@@ -35,6 +41,10 @@ export class DashboardComponent implements OnInit {
     this._mobileQueryListener = () => changeDetectorRef.detectChanges();
     this.mobileQuery.addListener(this._mobileQueryListener);
     Object.assign(this, { multi });
+    Object.assign(this, {single, multii}) ;
+  }
+  onnSelect(event) {
+    console.log(event);
   }
 
   ngOnDestroy(): void {
@@ -44,9 +54,11 @@ export class DashboardComponent implements OnInit {
 
  
   colorScheme = {
-    domain: ['#5AA454', '#C7B42C', '#AAAAAA']
+    domain: ['#9370DB', '#9932CC']
   };
-
+  colorSchemee = {
+    domain: ['#5AA454', '#A10A28', '#C7B42C', '#AAAAAA','#9932CC']
+  };
  
 
  onSelect(data): void {
