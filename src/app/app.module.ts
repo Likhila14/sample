@@ -61,12 +61,16 @@ import { SidebarComponent } from './dashboard1/sidebar/sidebar.component';
 
 
 import 'hammerjs';
+import { OrdersComponent } from './dashboard1/orders/orders.component';
+import { RecordComponent } from './dashboard1/record/record.component';
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
     SidebarComponent,
     routingComponents,
+    OrdersComponent,
+    RecordComponent,
   ],
   imports: [
     BrowserModule,
